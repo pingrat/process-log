@@ -1,0 +1,25 @@
+{
+  "name": "process-log",
+  "version": "0.0.1",
+  "description": "A logger \"inspired\" by npmlog supporting a wider range of colors for styling.",
+  "main": "log.js",
+  "scripts": {
+    "test": "mocca -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pingrat/process-log.git"
+  },
+  "keywords": [
+    "log"
+  ],
+  "author": "pingrat <pingrat@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pingrat/process-log/issues"
+  },
+  "homepage": "https://github.com/pingrat/process-log",
+  "dependencies": {
+    "ansi": "^0.3.0"
+  }
+}
