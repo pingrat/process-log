@@ -31,7 +31,7 @@ log.info('bar', '%s: qux', 'baz');
 
 If `process.name` is set to a string then it will be used as the default heading.
 
-Styles can be changed with `log.setStyle(level, style)`:
+Styles can be changed with `log.setStyle(level, style)`, either named colors or a hex-values in the format `#nnnnnn` can be used:
 ```javascript
 // make the label for silly messages white with
 // terrible pink background
@@ -53,5 +53,14 @@ log.panic('foo', 'bar');
 
 The level `silent` is always available, and the default after a `log.reset()`.
 
+##Releases
+###0.0.1
+* Initial release.
+
+##Future
+* Alternate formatter (currently using `util.format`)
+* Support for being exported as a [winston] transport.
+
 [npmlog]: https://github.com/npm/npmlog "The logger that npm uses"
 [npm]: https://www.npmjs.org/
+[winston]: https://github.com/flatiron/winston
