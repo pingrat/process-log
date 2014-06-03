@@ -113,9 +113,6 @@
 		    prefix  = args[1],
 		    message = _format.apply(this, args.slice(2));
 
-		if (_levels[level] === void(0))
-			return this.emit('error', new Error(format('Undefined log level: %O', level)));
-
 		var msg = {
 			id: _id++,
 			level: level,
